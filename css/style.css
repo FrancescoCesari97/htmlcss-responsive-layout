@@ -8,6 +8,7 @@
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 ul{
@@ -30,7 +31,7 @@ a{
 }
 
 
-/* utlis */
+/* grid */
 
 .container{
     max-width: 1080px;
@@ -38,6 +39,33 @@ a{
     padding: 0 15px;
 
 }
+
+.row{
+    margin: 0 -15px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col"]{
+    padding: 15px;
+}
+
+.col-1-3{
+    width: calc(100% / 3);
+}
+
+.col-2-3{
+    width: calc(100% / 3 * 2);
+}
+
+.col-1-2{
+    width: 50%;
+}
+
+
+/* utlis */
+
 
 
 :root{
@@ -69,7 +97,7 @@ a{
 
 #header > .container > .logo,
 #header > .container > nav{
-    padding: 20px;
+    padding: 20px 0;
 }
 
   li:nth-child(5){
@@ -79,7 +107,118 @@ a{
     border-radius: 20px;
 }
 
+li:nth-child(6){
+    display: none;
+}
+
 .logo img{
     width: 80%;
 }
 
+
+/* Header responsive*/
+
+@media screen and (max-width: 800px){
+
+    li {
+        display: none;
+    }
+
+    li:nth-child(6){
+        display: inline;
+        font-size: 20px;
+        
+    }
+
+   
+    
+
+}
+
+@media screen and (max-width: 480px){
+   
+}
+
+
+/* main */
+
+/* <!-- Section demo app --> */
+
+.card{
+    background-color: var(--lightblue-color);
+    height: 100%;
+}
+
+.demo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.img{
+    width: 50%;
+    
+}
+
+.img img{
+    width: 50%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+   padding: 0 15px 0 20px;
+    
+}
+
+.text a{
+    font-size: 20px;
+}
+
+.card > i{
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    color: var(--blue-color);
+}
+
+.card h3{
+    color: var(--blue-color);
+}
+
+.clean-code {
+    text-align: center;
+    padding: 15px;
+    line-height: 30px;
+}
+
+
+/* section demo app responsive */
+
+
+@media screen and (max-width: 800px){
+    .text{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .col-2-3{
+        width: 100%;
+    }
+    
+    .col-1-3{
+        width: 100%;
+    }
+}
+
+
+/* <!-- Stratigic PLanning --> */
