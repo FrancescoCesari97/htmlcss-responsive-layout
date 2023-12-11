@@ -30,6 +30,13 @@ a{
     color: inherit;
 }
 
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
 
 /* grid */
 
@@ -147,13 +154,14 @@ li:nth-child(6){
 .card{
     background-color: var(--lightblue-color);
     height: 100%;
+    border-radius: 20px;
 }
 
 .demo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .img{
@@ -177,7 +185,12 @@ li:nth-child(6){
 }
 
 .text a{
-    font-size: 20px;
+    font-size: 17px;
+    color: aliceblue;
+    background-color: var(--blue-color);
+    width: 50%;
+    padding: 10px  25px;
+    border-radius: 20px;
 }
 
 .card > i{
@@ -222,3 +235,89 @@ li:nth-child(6){
 
 
 /* <!-- Stratigic PLanning --> */
+
+#Stratigic-PLanning{
+    background-color: var(--purple-color);
+}
+
+.row-Stratigic{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Stratigic-PLanning .col-1-2{
+    width: 40%;
+    
+}
+
+.col-30-left{
+    color: aliceblue;
+}
+
+.col-30-left p{
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.col-30-left h3{
+    padding: 80px 0 50px 0;
+}
+
+.col-30-left img{
+    padding-top: 80px;
+}
+
+
+.col-30-right{
+    background-color: aliceblue;
+    border-radius: 40px;
+    text-align: center;
+    padding: 30px;
+    height: 70%;
+    margin-top: 50%;
+    line-height: 30px;
+  
+}
+
+.col-30-right p{
+    font-size: 12px;
+}
+
+.col-30-right i{
+    margin-top: 30px;
+    background-color: var(--purple-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+.col-30-right img{
+   width: 70%;
+   
+
+}
+
+
+/* Stratigic PLanning responsive */
+
+@media screen and (max-width: 800px){
+    #Stratigic-PLanning .col-1-2{
+        width: 100%;
+        
+    }
+    .col-30-right{
+       margin-top: 0;
+       height: 100%;
+
+    }
+    .col-30-right img{
+        width: 100%;
+        
+     
+     }
+}
+
+@media screen and (max-width: 480px){
+   
+}
