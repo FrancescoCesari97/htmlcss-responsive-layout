@@ -49,7 +49,7 @@ button{
 
 .row{
     margin: 0 -15px;
-
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -72,6 +72,22 @@ button{
 
 
 /* utlis */
+
+.img-round {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    line-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.img-round > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -187,6 +203,7 @@ li:nth-child(6){
     width: 55%;
     gap: 35px;
    padding: 0 15px 0 20px;
+   
     
 }
 
@@ -381,14 +398,11 @@ li:nth-child(6){
 
 .testimonial-img{
     width: 20%;
+    margin: 0 auto;
+    padding: 15px;
 }
 
-#Testimonials img{
-    display: block;
-    padding-top: 0;
-    border-radius: 70%;
-    
-}
+
 
 .testimonial-text{
     width: 80%;
@@ -409,7 +423,13 @@ li:nth-child(6){
 }
 
 @media screen and (max-width: 480px){
-    
+    .testimonial-img{
+        width: 100%;
+    }
+    .testimonial-text{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -458,6 +478,19 @@ li:nth-child(6){
     border-radius: 15px;
 }
 
+/* benefit of working with us responsive */
+
+@media screen and (max-width: 800px){
+    #working-us .col-1-3{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .col-1-3{
+        width: 100%;
+    }
+}
 
 
 /* <!-- About us --> */
@@ -495,10 +528,10 @@ li:nth-child(6){
     padding-right: 30px;
 }
 
-#About-us .col-right img{
+/* #About-us .col-right img{
     padding: 30px 0 10px 0;
     border-radius: 50%;
-}
+} */
 
 #About-us .col-right h4{
     font-size: 20px;
@@ -518,7 +551,48 @@ li:nth-child(6){
 #About-us .col-right i{
     padding-right: 7px;
 }
+#About-us .layer-virgolette{
+    position: relative;
+  
+}
+#About-us .layer-virgolette > i{
+    position: absolute;
+    color: var(--purple-color);
+    right:0px;
+    top: 0;
+    font-size: 60px;
+}
 
+
+
+/* About us responsive */
+
+@media screen and (max-width: 700px){
+    #About-us .col-right {
+        width: 30%;}
+
+}
+
+@media screen and (max-width: 580px){
+    #About-us .col-left{
+        width: 100%;
+    }
+    #About-us .col-right{
+        width: 100%;
+
+    }
+    #About-us .img-round{
+        width: 50%;
+    }
+
+    #About-us .layer-virgolette > i{
+right: 177px;
+    }
+
+    #About-us {
+        padding: 50px 0 50px 15px;
+    }
+}
 
 /* <!-- Get Started --> */
 
@@ -529,7 +603,7 @@ li:nth-child(6){
 }
 
 #Get-started .container{
-    width: 500px;
+    max-width: 500px;
 }
 
 .Get-started-text{
