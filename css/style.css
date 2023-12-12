@@ -393,3 +393,48 @@ li:nth-child(6){
 }
 
 
+/* <!-- benefit of working with us --> */
+
+
+#working-us{
+    background-color: var(--purple-color);
+}
+
+.working-us-title{
+    text-align: center;
+    color: aliceblue;
+    padding: 50px;
+    font-size: 30px;
+}
+
+
+
+#working-us .card{
+    background-color: aliceblue;
+    padding: 20px;
+
+    color: var(--purple-color);
+}
+
+#working-us .card h2{
+    font-size: 60px;
+}
+
+#working-us .card h4{
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+#working-us .card p{
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.432);
+    padding-bottom: 30px;
+}
+
+#working-us button{
+    background-color: var(--purple-color);
+    color: aliceblue;
+    padding: 8px 40px;
+    border-radius: 15px;
+}
+
