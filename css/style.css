@@ -17,7 +17,7 @@ ul{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 li{
@@ -369,12 +369,14 @@ li:nth-child(6){
 
 .testimonial-title P{
     line-height: 30PX;
+    
 }
 
 #Testimonials .card {
     background-color: var(--purple-color);
     padding: 0 15px;
     margin: 30px 0;
+    color: aliceblue;
 }
 
 .testimonial-img{
@@ -390,6 +392,24 @@ li:nth-child(6){
 
 .testimonial-text{
     width: 80%;
+    padding: 15px;
+    line-height: 25px;
+}
+
+.testimonial-text h4{
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+
+/* Testimonials responsive */
+
+@media screen and (max-width: 800px){
+   
+}
+
+@media screen and (max-width: 480px){
+    
 }
 
 
@@ -438,3 +458,139 @@ li:nth-child(6){
     border-radius: 15px;
 }
 
+
+
+/* <!-- About us --> */
+
+#About-us {
+    padding: 50px 0;
+}
+
+#About-us .row{
+    justify-content: center;
+}
+
+#About-us .col-left{
+    width: 60%;
+}
+
+#About-us .col-right{
+    width: 25%;
+}
+
+#About-us .card{
+    background-color: #ffffff;
+}
+
+#About-us .col-left .card h2{
+    color: var(--purple-color);
+    font-size: 50px;
+    padding: 30px 0;
+
+}
+
+#About-us .col-left .card p{
+    line-height: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+#About-us .col-right img{
+    padding: 30px 0 10px 0;
+    border-radius: 50%;
+}
+
+#About-us .col-right h4{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--purple-color);
+    font-weight: 800;
+    padding: 15px 15px 15px 0;
+}
+
+#About-us .col-right a{
+    color: aliceblue;
+    background-color: var(--purple-color);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#About-us .col-right i{
+    padding-right: 7px;
+}
+
+
+/* <!-- Get Started --> */
+
+#Get-started{
+    background-color: var(--purple-color);
+    color: aliceblue;
+    padding: 30px 0;
+}
+
+#Get-started .container{
+    width: 500px;
+}
+
+.Get-started-text{
+    text-align: center;
+}
+
+#Get-started h5{
+    padding: 30px 0  0 0;
+    opacity: 0.5;
+}
+
+#Get-started h3{
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#Get-started h2{
+    padding: 20px 0;
+    font-size: 60px;
+    color: #ffc15c;
+}
+
+#Get-started p{
+    line-height: 25px;
+    font-size: 12px;
+}
+
+
+.Get-started-link{
+    padding: 30px 0;
+}
+
+.Get-started-link a{
+    color: var(--purple-color);
+    background-color: aliceblue;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+
+/* <!-- footer --> */
+
+#footer{
+    background-color: #333333;
+    color: aliceblue;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer .container{
+    width: 400px;
+}
+
+#footer p{
+    padding: 30px 0;
+}
+
+#footer a{
+    text-decoration: underline;
+    color: var(--purple-color);
+}
