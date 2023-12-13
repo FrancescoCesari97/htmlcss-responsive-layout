@@ -198,12 +198,12 @@ li:nth-child(6){
 }
 
 .text{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 55%;
     gap: 35px;
    padding: 0 15px 0 20px;
-   
+   line-height: 50px;
     
 }
 
@@ -581,12 +581,12 @@ li:nth-child(6){
         width: 100%;
 
     }
-    #About-us .img-round{
+    #About-us .layer-virgolette{
         width: 50%;
     }
 
     #About-us .layer-virgolette > i{
-right: 177px;
+         right: 0px;
     }
 
     #About-us {
